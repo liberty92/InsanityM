@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.liberation.lab" version="1.0.0">
   <name>Liberty Invest</name>
-  <description>Hệ thống chứng khoán ảo hàng đầu Việt Nam</description>
+  <description>Hệ thống chứng khoán ảo số 1 Việt Nam - www.nth7.com</description>
   <author href="http://www.nth7.com" email="liberty4692@gmail.com">Nguyễn Trọng Hùng</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>

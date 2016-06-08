@@ -1,0 +1,134 @@
+.adminHeader {
+	background-image: url(../images/core/banner8.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 120px;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/core/background3.jpg);
+}
+
+.pageBody {
+	width: 98%;
+	background-image: url(../images/core/backgroundAdmin.png);
+	background-size: 100% 100%;
+	min-height: 520px;
+	text-align: center;
+	margin: 10px auto 10px;
+	padding: 0px 0px;
+	overflow: hidden;
+	border: 1px solid #666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+.footer {
+	font-size: 11px;
+	color: #909191;
+}
+
+@font-face {
+	font-family: liberty;
+	src: url('../fonts/liberty.ttf') format('truetype');
+	font-weight: normal;
+	font-stype: normal;
+}
+
+.insanity, .noti {
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px 10px;
+	margin: 10px 0px 0px;
+	font-family: "liberty";
+	color: #aaaaab;
+	text-align: center;
+	font-family: "liberty", "Arial";
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0px 0px 4px white;
+	letter-spacing: 8px;
+	-webkit-transition: text-shadow 2s linear;
+	-moz-transition: text-shadow 2s linear;
+	-ms-transition: text-shadow 2s linear;
+	-o-transition: text-shadow 2s linear;
+	transition: text-shadow 2s linear;
+}
+
+.insanity {
+	font-size: 1.5em;
+	letter-spacing: 1em;
+}
+
+.glow {
+	text-shadow: 0px 0px 12px white;
+}
+
+.libertyTable table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1em !important;
+}
+
+.libertyTable th {
+	padding: 10px;
+	margin: 0;
+	text-align: left;
+	max-width: 400px;
+}
+
+.libertyTable tr, td {
+	padding: 8px;
+	margin: auto;
+	text-align: left;
+	max-width: 400px;
+}
+
+.libertyTable table, th {
+	border: 1px solid rgba(221, 221, 221, 0)
+}
+
+.libertyTable th {
+	border-left: none;
+	border-right: none;
+	background: #0099ff;
+	color: #fff;
+	cursor: default;
+}
+
+.libertyTable tr:nth-child(odd) {
+	background: #ffffff;
+}
+
+.libertyTable tr:nth-child(even) {
+	background: #ebedfa;
+}
+
+.libertyTable tr:hover {
+	background: #c9f9f9;
+	/*cursor: pointer;*/
+}
+
+.listArticle {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px 10px;
+	margin: 10px 0px 0px;
+	min-height:460px;
+}
+a{
+	color:#0A86F1;
+}
+a:hover{
+	color:rgb(4, 106, 195);
+}
+h2{
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+} 

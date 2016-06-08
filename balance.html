@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liberty 2016 standard page</title>
+  <!-- Meta data -->
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link rel="stylesheet" type="text/css" href="css/MegaNavbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar-inverse.css" /> 
+  <style type="text/css">
+    body{
+      margin: 0px;
+      background: url(img/background3.jpg); 
+      color: #0099ff;
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+    }
+    .carousel-content {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      z-index: 20;
+      color: white;
+      font-size: 0.5em;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    table{
+      color: #0099ff;
+    }  
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+   <!-- HEADER STARTS -->
+    <div class="adminHeader row">
+      <a href="homepage.html">
+        <img alt="" style="height: 50px; width: 60px; position:absolute; top:5px; right:20px" class="img-responsive"  src="img/logo.png"> 
+      </a>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <!-- MENU STARTS -->
+    <div class="row row" style=" ">
+      <nav class="navbar navbar-inverse no-border-radius" id="main_navbar" role="navigation" style="margin-bottom: 0px !important">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html" tppabs="http://mastercafe.com.es/index.html"><i class="fa fa-home"></i> Quản lý tài khoản</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                 <!-- 
+                    regular link
+                    <a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a> -->
+
+                    <ul class="nav navbar-nav navbar-left">
+                      <!-- divider -->
+
+                      <li class="divider"></li>
+                      <!-- dropdown default -->
+
+
+
+
+
+
+                      <!-- 1. TRADING -->
+                      <li class="dropdown-short">
+                        <a  href="trading.html"  aria-expanded="true">
+                          <i class="fa fa-connectdevelop"></i>&nbsp;
+                          <span class="hidden-sm">Giao dịch trực tuyến</span>
+                        </a>
+
+                        <ul class="dropdown-menu" style="min-width:300px">
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/trading">
+                                Giao dịch chứng khoán
+                                <span class="desc">
+                                  Đặt lệnh giao dịch trực tuyến
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="balance.html">
+                                Quản lý tài khoản
+                                <span class="desc">
+                                  Quản lý hiệu quả đầu tư danh mục
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingHistory">
+                                Lịch sử đặt lệnh
+                                <span class="desc">
+                                  Lịch sử chi tiết các lệnh giao dịch
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/marginStats">
+                                Thống kê margin
+                                <span class="desc">
+                                  Thống kê sử dụng dịch vụ cho vay ký quỹ
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingAndTaxFee">
+                                Thống kê thuế & phí giao dịch
+                                <span class="desc">
+                                  Thống kê phí giao dịch, thuế bán và các dịch vụ khác
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                        </ul>
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+
+                      <!-- 2. NEWS -->
+                      <li class="dropdown-short">
+                        <a   href="balance.html"  aria-expanded="true">
+                          <i class="fa fa-newspaper-o"></i>&nbsp;
+                          <span class="hidden-sm">Quản lý tài khoản</span>
+                        </a>
+
+
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+                      <!-- 3. ANNOUCEMENT -->
+                      <li class="dropdown-short">
+                        <a   href="orderHistory.html" 
+                        aria-expanded="true">
+                        <i class="fa fa-binoculars"></i>&nbsp;
+                        <span class="hidden-sm">Lịch sử đặt lệnh</span>
+                      </a>
+
+                    </li>
+                    <!-- divider -->
+                    <li class="divider"></li>
+
+                    <!-- 3. ANALYSIS CENTER -->
+                    <li class="dropdown-short">
+                      <a  href="margin.html" 
+                      aria-expanded="true">
+                      <i class="fa fa-bar-chart"></i>&nbsp;
+                      <span class="hidden-sm">Thống kê margin</span>
+                    </a>
+
+                  </li>
+                  <!-- divider -->
+                  <li class="divider"></li>
+
+                  <!-- 4. ANNOUCEMENT -->
+                  <li class="dropdown-short">
+                    <a   href="tradingFee.html" 
+                    aria-expanded="true">
+                    <i class="fa fa-flag"></i>&nbsp;
+                    <span class="hidden-sm">Thống kê thuế & phí giao dịch</span>
+                  </a>
+
+                </li>
+                <!-- divider -->
+                <li class="divider"></li>
+
+              </ul>
+              <!--   <%-- RIGHT MENU --%> -->
+              <ul class="nav navbar-nav navbar-right" style="padding-bottom: 0px; padding-top: 0px;">
+                <!-- search form -->
+           <!--      <form method="POST" action="${pageContext.request.contextPath}/searchArticle" class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" style="padding-right:0px" role="search">
+             <div class="input-group">
+               <input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="articleTitle">
+               <span class="input-group-btn">
+                 <button class="btn btn-default" type="submit">
+                   <i class="fa fa-search"></i>&nbsp;
+                 </button>
+               </span>
+             </div>
+           </form> -->
+
+                <!-- 5. ACCOUNT -->
+                <li class="dropdown-grid">
+                  <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                    <i class="fa fa-lock"></i>&nbsp;
+                    <span id="userFullName" class="userFullName">User full name</span>
+                    <span class="caret"></span>
+                  </a>
+                  <div class="dropdown-grid-wrapper" role="menu">
+                    <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                      <li>
+                        <div id="carousel-example-account" class="carousel slide">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <h3 class="text-right userFullName" style="padding-top:0px; border-bottom: 1px solid #555;"> User full name</h3>
+                                  <br>
+                                  <div class="row"> 
+                                <div class="col-xs-12">
+                                  <img id="userProfilePicture" src="img/pistachio.jpg" class="img-responsible" style="max-height: 150px; float:right;" />
+                                  <a style="float: left;" href="index.html" class="" onclick="location.href ='index.html';">Logout</a>
+                                </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- MENU ENDS -->
+ 
+ <div class="col-xs-12 listArticle" style="min-height: 450px !important">
+   
+<div class="">
+              <select name="" id="balanceSelect" class="form-control" required="required" style="margin-bottom: 5px">
+                <option value="0">Chọn tài khoản</option> 
+              </select>
+              <div class="table-responsive">
+
+
+                <table id="dataTable" class="table table-hover table-striped table-bordered">
+                  <thead>
+                    <tr> 
+                      <th width="30%"  style=""> <a href="portfolio.html"><i class="fa fa-sign-in"  style="color:green"> Danh mục</i> </a></th>
+                      <th width="70%" id="balanceName" style="text-align: right;">Hãy chọn tài khoản</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Id</td>
+                    <td style="text-align: right;" id="balanceId">0</td>
+                  </tr> 
+                  <tr>
+                    <td>Ngày tạo</td>
+                    <td style="text-align: right;" class="formatTime" id="balanceCreatedDate">0</td>
+                  </tr>
+                  <tr>
+                    <td>NAV gốc</td>
+                    <td style="text-align: right;"  class="formatNumber" id="balanceInitialNAV">0</td>
+                  </tr>
+                  <tr>
+                    <td>Tiền mặt</td>
+                    <td style="text-align: right;"  class="formatNumber" id="balanceCash">0</td>
+                  </tr>
+                  <tr>
+                    <td>Khả dụng</td>
+                    <td style="text-align: right;"  class="formatNumber" id="balanceAvailableCash">0</td>
+                  </tr>
+                  <tr>
+                    <td>Tổng TS</td>
+                    <td style="text-align: right;"  class="formatNumber" id="balanceTotalAssets">0</td>
+                  </tr>
+                  <tr>
+                    <td>NAV</td>
+                    <td style="text-align: right;"  class="formatNumber" id="balanceNAV">0</td>
+                  </tr>
+                  <tr>
+                    <td>Margin</td>
+                    <td style="text-align: right;"  class="formatPercent" id="balanceMarginRate">0</td>
+                  </tr
+                  <tr>
+                    <td><i class="fa fa-arrow-up" style="color: green"></i>/<i class="fa fa-arrow-down" style="color: red"></i></td>
+                    <td style="text-align: right; color: green" class="formatNumber" id="balanceChanging">0</td>
+                  </tr>
+                  <tr>
+                    <td> <i class="fa fa-percent " style="color: orange"></i></td>
+                    <td style="text-align: right; color: green"  class="formatPercent" id="balanceChangingPercent">0</td>
+                  </tr>
+                  <tr>
+                    <td>Xóa</td>
+                    <td  style="text-align: right;" ><i class="fa fa-trash " style="color: red" id="deleteBalanceSubmit"></i></td>
+                  </tr>
+                  </table>
+                  </div>
+                  </div>
+
+
+
+<div class="col-xs-12" style="padding-left: 0px">
+    <button id="btn1" type="button" data-toggle="modal" 
+      data-target="#changeInfo" class="btn btn-primary"><i class="fa fa-plus-square"> 
+      <span  style="font-family:arial">Tạo tài khoản</span></i></button>
+</div>
+<div class="modal fade" id="changeInfo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"
+            aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Tạo tài khoản</h4>
+        </div>
+        <div class="modal-body">
+          <form action="${pageContext.request.contextPath}/user/addBalance"
+            method="POST" role="form" data-toggle="validator">
+            <div class="form-group">
+              <label for="" style="color: black">Tên tài khoản</label> <input type="text"
+                data-minlength="3" required value="" class="form-control"
+                name="balanceName" id="balanceInputName" placeholder="demo 1">
+            </div>
+               <!-- <div class="form-group"> 
+                  <div class="">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="marginState" value="YES">Sử dụng Margin</label>
+                    </div>
+                  </div>
+                </div> -->
+            <div class="form-group">
+              <div>
+                <label for="" style="color: black"><span style="float: left" style="color: black">NAV ban
+                    đầu</span> </label><span id="cashDisplay"
+                  style="color: blue; float: right; font-weight: bold">0</span>
+              </div>
+              <input type="number" pattern="[0-9]*" min="100000" max="10e10"
+                required value="" class="form-control" name="balanceInitialNAV"
+                id="cashInput" placeholder="10,000,000">
+            </div>
+            <button type="button" id="addBalanceSubmit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ </div>
+
+ <div id="loadingScreen" style="position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; text-align: center;  padding-top: 200px">
+     
+     <span id="loadingMessage" style="vertical-align: middle; text-align: center; padding-top: 200px;">
+       
+       <i style='color: blue' class='fa fa-refresh fa-spin fa-2x fa-fw'></i><br/> <h4 style='color:  #00BFFF;'>loading</h4>
+     </span>
+
+     <span id="errorMessage" style="vertical-align: middle; text-align: center; padding-top: 200px; ">
+       
+       <i style='color: orange' class='fa fa-exclamation-triangle fa-2x '></i><br/> <h4 style='color:  red'>connection error</h4>
+     </span>
+   
+
+ </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/accounting.min.js"></script>
+<script src="js/insanityMobile.js"></script>
+
+<script type="text/javascript">
+  var userId = localStorage.getItem("userId");
+  var userFullName = localStorage.getItem("userFullName");
+  var userProfilePicture = localStorage.getItem("userProfilePicture");
+  var balanceList =[] ;
+  var selectedBalanceId =0;
+
+  function initInfo(){
+    $(".userFullName").text(userFullName);
+    if((userProfilePicture).localeCompare("undefined") != 0){
+      $("#userProfilePicture").attr("src", userProfilePicture);
+    }
+  }
+
+  $('#balanceSelect').on('change', function() {
+    selectedBalanceId = $(this).val();
+    for (var i = 0; i < balanceList.length; i++) {
+      if(selectedBalanceId == balanceList[i].balanceId){
+
+
+        $("#balanceName").text(balanceList[i].balanceName);
+        $("#balanceId").text(balanceList[i].balanceId);
+        $("#balanceCreatedDate").text( (balanceList[i].balanceCreatedDate).replace(/'/g, ''));
+        $("#balanceInitialNAV").text(balanceList[i].balanceInitialNAV);
+        $("#balanceCash").text(balanceList[i].balanceCash);
+        $("#balanceAvailableCash").text(balanceList[i].balanceAvailableCash);
+        $("#balanceTotalAssets").text(balanceList[i].balanceTotalAssets);
+        $("#balanceNAV").text(balanceList[i].balanceNAV);
+        $("#balanceMarginRate").text(balanceList[i].balanceMarginRate);
+        $("#balanceChanging").text(balanceList[i].balanceNAV - balanceList[i].balanceInitialNAV );
+        $("#balanceChangingPercent").text( (balanceList[i].balanceNAV - balanceList[i].balanceInitialNAV)/balanceList[i].balanceInitialNAV );
+
+        $(".formatPercent").formatPercent2();
+        $(".formatTime").formatTime();
+        $(".formatNumber").formatNumber();
+
+        if( balanceList[i].balanceNAV - balanceList[i].balanceInitialNAV < 0){
+          $("#balanceChanging").css("color","red");
+          $("#balanceChangingPercent").css("color","red");
+        }
+
+        localStorage.setItem("balanceId", balanceList[i].balanceId);
+        localStorage.setItem("balanceName", balanceList[i].balanceName);
+
+      }
+    }
+
+  });
+
+  function loadBalanceInfo(){
+        $.ajax({
+        // url : 'http://localhost:8080/BkSecurities/ajax/ajaxBalanceInfo/callback=?',  
+        url : 'http://www.nth7.com/ajax/ajaxBalanceInfo/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: true,
+        timeout: 20000,
+        data : {
+          userId : userId 
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          var dataSize = (Object.keys(data).length);  
+          if(dataSize > 0){
+          for (var value in data) {
+              var balanceDetail =[] ;
+              var obj = data[value];
+              console.log(obj);
+              balanceList.push(obj);
+               $('#balanceSelect')
+                    .append($("<option></option>")
+                    .attr("value",obj.balanceId)
+                    .text(obj.balanceName)); 
+          }
+          console.log(balanceList);
+          }
+          else{
+            bootbox.alert("Currently you don't have any trading balance");
+          }
+          $("#loadingScreen").hide();
+        },
+        error: function() {  
+            $("#errorMessage").show();
+            $("#loadingMessage").hide();
+        }
+      });
+  }
+
+
+  $("#addBalanceSubmit").click(function(){
+    var balanceName = $("#balanceInputName").val();
+    var balanceInitialNAV = $("#cashInput").val();
+
+    if(balanceName.length > 0 && balanceInitialNAV >100000){
+      $.ajax({
+        // url : 'http://localhost:8080/BkSecurities/ajax/ajaxAddBalance/callback=?',  
+        url : 'http://www.nth7.com/ajax/ajaxAddBalance/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: false,
+        timeout: 20000,
+        data : {
+          userId : userId, 
+          balanceName : balanceName, 
+          balanceInitialNAV : balanceInitialNAV 
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          $("#loadingScreen").hide();
+          bootbox.alert("Your balance has been successfully created!", function(){ location.reload();});
+          
+        },
+        error: function() {  
+           bootbox.alert("Error occured, check your connection!");
+           $("#errorMessage").hide();
+        }
+      });
+
+    }
+    else{
+       bootbox.alert("Your info is invalid!");
+       console.log(balanceName.length);
+       console.log(balanceInitialNAV);
+    }
+
+  });
+
+
+
+
+  $("#deleteBalanceSubmit").click(function(){
+    
+      $.ajax({
+        // url : 'http://localhost:8080/BkSecurities/ajax/ajaxRemoveBalance/callback=?',  
+        url : 'http://www.nth7.com/ajax/ajaxAddBalance/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: false,
+        timeout: 20000,
+        data : {
+          userId : userId, 
+          balanceId : selectedBalanceId
+        },
+        beforeSend : function(){
+          $("#loadingScreen").show();
+          $("#loadingMessage").show();
+        } ,
+        success : function(data) {
+          $("#loadingScreen").hide();
+          bootbox.alert("Your balance has been successfully deleted!", function(){ location.reload();});
+          
+        },
+        error: function() {  
+           bootbox.alert("Error occured, check your connection!");
+           $("#errorMessage").hide();
+        }
+      });
+
+  });
+
+
+
+$('#cashInput').keyup(function() {
+    var raw_num = $(this).val();
+    var form_num = accounting.formatMoney(raw_num);
+    $('#cashDisplay').html(form_num);
+  });
+
+$(document).ready(function(){
+  initInfo();
+  loadBalanceInfo();
+});
+</script>
+</body>
+</html>

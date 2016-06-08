@@ -1,0 +1,513 @@
+<!DOCTYPE html> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css" >
+
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link rel="stylesheet" type="text/css" href="css/MegaNavbar.css" />
+<link rel="stylesheet" type="text/css" href="css/navbar-inverse.css" /> 
+
+
+<link rel="shortcut icon" href="img/favicon.ico" /> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+
+</head>
+
+
+<body>
+    <style>
+      .toTop {position: fixed;right: 15px;bottom: 56px;z-index: 10000;color: #999;}
+  </style>
+
+
+  <div class="container">
+    <nav class="navbar navbar-inverse no-border-radius" id="main_navbar" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" tppabs="http://mastercafe.com.es/index.html"><i class="fa fa-home"></i> INSANITY mobile</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                 <!-- 
+                    regular link
+                    <a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a> -->
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <!-- divider -->
+
+                        <li class="divider"></li>
+                        <!-- dropdown default -->
+
+
+
+
+
+
+                        <!-- 1. TRADING -->
+                        <li class="dropdown-short">
+                            <a data-toggle="dropdown" href="{pageContext.request.contextPath}/trading" class="dropdown-toggle" aria-expanded="true">
+                                <i class="fa fa-connectdevelop"></i>&nbsp;
+                                <span class="hidden-sm">Giao dịch trực tuyến</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" style="min-width:300px">
+                                <li>
+                                    <p>
+                                        <a href="${pageContext.request.contextPath}/user/trading">
+                                            Giao dịch chứng khoán
+                                            <span class="desc">
+                                                Đặt lệnh giao dịch trực tuyến
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="divider"></li>
+
+
+                                <li>
+                                    <p>
+                                        <a href="${pageContext.request.contextPath}/user/balance">
+                                            Quản lý tài khoản
+                                            <span class="desc">
+                                                Quản lý hiệu quả đầu tư danh mục
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <p>
+                                        <a href="${pageContext.request.contextPath}/user/tradingHistory">
+                                            Lịch sử đặt lệnh
+                                            <span class="desc">
+                                                Lịch sử chi tiết các lệnh giao dịch
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="divider"></li>
+
+                                <li>
+                                    <p>
+                                        <a href="${pageContext.request.contextPath}/user/marginStats">
+                                            Thống kê margin
+                                            <span class="desc">
+                                                Thống kê sử dụng dịch vụ cho vay ký quỹ
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="divider"></li>
+
+
+                                <li>
+                                    <p>
+                                        <a href="${pageContext.request.contextPath}/user/tradingAndTaxFee">
+                                            Thống kê thuế & phí giao dịch
+                                            <span class="desc">
+                                                Thống kê phí giao dịch, thuế bán và các dịch vụ khác
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="divider"></li>
+
+                            </ul>
+                        </li>
+                        <!-- divider -->
+                        <li class="divider"></li>
+
+
+                        <!-- 2. NEWS -->
+                        <li class="dropdown-short">
+                            <a data-toggle="dropdown" href="${pageContext.request.contextPath}/listArticle/news" 
+                            ondblclick="location.href ='${pageContext.request.contextPath}/listArticle/news';"
+                            class="dropdown-toggle" aria-expanded="true">
+                            <i class="fa fa-newspaper-o"></i>&nbsp;
+                            <span class="hidden-sm">Tin tức</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" style="min-width:350px"> 
+
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news">
+                                        Tất cả tin tức
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li> 
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_enterprise">
+                                        Tin doanh nghiệp
+                                        <span class="desc">
+                                            Tin tức liên quan đến các doanh nghiệp đang niêm yết
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_finance_banking">
+                                        Tài chính ngân hàng
+                                        <span class="desc">
+                                            Tin tức tài chính ngân hàng
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_real_estate">
+                                        Bất động sản
+                                        <span class="desc">
+                                            Tin tức bất động sản
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_goods_materials">
+                                        Hàng hóa - nguyên liệu
+                                        <span class="desc">
+                                            Tin tức hàng hóa nguyên liệu
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_macroeconomics">
+                                        Kinh tế vĩ mô
+                                        <span class="desc">
+                                            Tin tức kinh tế vĩ mô
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                            <li>
+                                <p>
+                                    <a href="${pageContext.request.contextPath}/listArticle/news_international">
+                                        Tin quốc tế
+                                        <span class="desc">
+                                            Tin tức kinh tế thế giới
+                                        </span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="divider"></li>
+                            
+                        </ul>
+                    </li>
+                    <!-- divider -->
+                    <li class="divider"></li>
+                    
+                    <!-- 3. ANNOUCEMENT -->
+                    <li class="dropdown-short">
+                        <a data-toggle="dropdown" href="${pageContext.request.contextPath}/listArticle/market" 
+                        ondblclick="location.href ='${pageContext.request.contextPath}/listArticle/market';"
+                        class="dropdown-toggle" aria-expanded="true">
+                        <i class="fa fa-binoculars"></i>&nbsp;
+                        <span class="hidden-sm">Thông tin thị trường</span>
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" style="min-width:300px">
+                        <li>
+                            <p>
+                                <a href="${pageContext.request.contextPath}/listArticle/market">
+                                    Thông tin thị trường
+                                </a>
+                            </p>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <p>
+                                <a href="${pageContext.request.contextPath}/listArticle/market_general">
+                                    Tổng quan thị trường
+                                    <span class="desc">
+                                        Báo cáo tổng quan thị trường
+                                    </span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <p>
+                                <a href="${pageContext.request.contextPath}/listArticle/market_trading_results">
+                                    Kết quả giao dịch
+                                    <span class="desc">
+                                        Báo cáo kết quả giao dịch
+                                    </span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="divider"></li> 
+
+                        <li>
+                            <p>
+                                <a href="${pageContext.request.contextPath}/listArticle/market_foreign_results">
+                                    Giao dịch khối ngoại 
+                                    <span class="desc">
+                                        Báo cáo kết quả giao dịch khối ngoại
+                                    </span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="divider"></li> 
+
+                    </ul>
+                </li>
+                <!-- divider -->
+                <li class="divider"></li>
+
+                <!-- 3. ANALYSIS CENTER -->
+                <li class="dropdown-short">
+                    <a data-toggle="dropdown" href="${pageContext.request.contextPath}/listArticle/analyze" 
+                    ondblclick="location.href ='${pageContext.request.contextPath}/listArticle/analyze';"
+                    class="dropdown-toggle" aria-expanded="true">
+                    <i class="fa fa-bar-chart"></i>&nbsp;
+                    <span class="hidden-sm">Phân tích</span>
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" style="min-width:300px">
+                    <li>
+                        <p>
+                            <a href="${pageContext.request.contextPath}/listArticle/analyze">
+                                Phân tích kỹ thuật
+                            </a>
+                        </p>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <p>
+                            <a href="${pageContext.request.contextPath}/listArticle/analyze_technical_chart">
+                                Biểu đồ kỹ thuật
+                                <span class="desc">
+                                    Biểu đồ kỹ thuật
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li>
+                        <p>
+                            <a href="${pageContext.request.contextPath}/listArticle/analyze_portfolio">
+                                Danh mục đầu tư
+                                <span class="desc">
+                                    Các danh mục đầu tư được khuyến nghị
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="divider"></li>
+
+                    <li>
+                        <p>
+                            <a href="${pageContext.request.contextPath}/listArticle/analyze_recommended_stock">
+                                Cổ phiếu khuyến nghị
+                                <span class="desc">
+                                    Các mã cổ phiếu được khuyến nghị
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                    <li class="divider"></li>
+
+                </ul>
+            </li>
+            <!-- divider -->
+            <li class="divider"></li>
+
+            <!-- 4. ANNOUCEMENT -->
+            <li class="dropdown-short">
+                <a data-toggle="dropdown" href="${pageContext.request.contextPath}/listArticle/announcement" 
+                ondblclick="location.href ='${pageContext.request.contextPath}/listArticle/announcement';"
+                class="dropdown-toggle" aria-expanded="true">
+                <i class="fa fa-flag"></i>&nbsp;
+                <span class="hidden-sm">Thông báo</span>
+                <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu" style="min-width:300px">
+                <li>
+                    <p>
+                        <a href="${pageContext.request.contextPath}/listArticle/announcement">
+                            Tất cả  thông báo 
+                        </a>
+                    </p>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <p>
+                        <a href="${pageContext.request.contextPath}/listArticle/announcement_common">
+                            Thông báo chung
+                            <span class="desc">
+                                Thông báo chung
+                            </span>
+                        </a>
+                    </p>
+                </li>
+                <li class="divider"></li>
+
+                <li>
+                    <p>
+                        <a href="http://www.nth7.com/viewArticle/80">
+                            Giới thiệu về INSANITY
+                            <span class="desc">
+                                Giới thiệu về INSANITY
+                            </span>
+                        </a>
+                    </p>
+                </li>
+                <li class="divider"></li>
+
+
+                <li>
+                    <p>
+                        <a href="${pageContext.request.contextPath}/listArticle/announcement_recruitment">
+                            Tuyển dụng
+                            <span class="desc">
+                                Thông báo tuyển dụng
+                            </span>
+                        </a>
+                    </p>
+                </li>
+                <li class="divider"></li>
+
+            </ul>
+        </li>
+        <!-- divider -->
+        <li class="divider"></li>
+
+    </ul>
+    <!--   <%-- RIGHT MENU --%> -->
+    <ul class="nav navbar-nav navbar-right" style="padding-bottom: 0px; padding-top: 0px;">
+        <!-- search form -->
+        <form method="POST" action="${pageContext.request.contextPath}/searchArticle" class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" style="padding-right:0px" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="articleTitle">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="fa fa-search"></i>&nbsp;
+                    </button>
+                </span>
+            </div>
+        </form>
+
+        <!-- 5. ACCOUNT -->
+        <li class="dropdown-grid">
+            <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                <i class="fa fa-lock"></i>&nbsp;
+                <span id="userFullName">User full name</span>
+                <span class="hidden-sm"><c:out value="${sessionScope.userFullName}"/></span>
+                <span class="caret"></span>
+            </a>
+            <div class="dropdown-grid-wrapper" role="menu">
+                <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                    <li>
+                      <div id="carousel-example-account" class="carousel slide">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"> User full name</h3>
+                                        <br>
+                                        <div class="row">
+                                         <div class="col-xs-5">
+                                             <ol class="carousel-indicators navbar-carousel-indicators" style="">
+                                                <li data-target="#carousel-example-account" data-slide-to="0" class="active">
+
+                                                    <a href="${pageContext.request.contextPath}/logout" class="" onclick="location.href ='${pageContext.request.contextPath}/logout';">Logout</a>
+
+                                                </li>
+
+                                                <li data-target="#carousel-example-account" data-slide-to="1" class="">
+
+                                                    <a href="${pageContext.request.contextPath}/user/Info" class="" onclick="location.href ='${pageContext.request.contextPath}/user/Info';">
+
+                                                        User info
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="col-xs-7">
+                                            <img src="images/core/defaultProfilePicture.jpg" class="img-responsible" style="max-height: 150px;" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</li>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+</div>
+</div>
+</nav>
+</div>
+
+</body>
+</html>

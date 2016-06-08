@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liberty 2016 standard page</title>
+  <!-- Meta data -->
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link rel="stylesheet" type="text/css" href="css/MegaNavbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar-inverse.css" /> 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
+  <style type="text/css">
+    body{
+      margin: 0px;
+      background: url(img/background3.jpg); 
+      color: #0099ff;
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+    }
+    .carousel-content {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      z-index: 20;
+      color: white;
+      font-size: 0.5em;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    table{
+      color: #0099ff;
+    }
+    tr{
+      white-space: normal !important;
+    }
+    td{
+      white-space: normal !important;
+    }  
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+       <!-- HEADER STARTS -->
+    <div class="adminHeader row">
+      <a href="homepage.html">
+        <img alt="" style="height: 50px; width: 60px; position:absolute; top:5px; right:20px" class="img-responsive"  src="img/logo.png"> 
+      </a>
+    </div>
+    <!-- HEADER ENDS -->
+
+      <!-- MENU STARTS -->
+  <div class="row row" style=" ">
+    <nav class="navbar navbar-inverse no-border-radius" id="main_navbar" role="navigation" style="margin-bottom: 0px !important">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" tppabs="http://mastercafe.com.es/index.html"><i class="fa fa-home"></i> Thống kê margin</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                 <!-- 
+                    regular link
+                    <a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a> -->
+
+                    <ul class="nav navbar-nav navbar-left">
+                      <!-- divider -->
+
+                      <li class="divider"></li>
+                      <!-- dropdown default -->
+
+
+
+
+
+
+                      <!-- 1. TRADING -->
+                      <li class="dropdown-short">
+                        <a  href="trading.html"  aria-expanded="true">
+                          <i class="fa fa-connectdevelop"></i>&nbsp;
+                          <span class="hidden-sm">Giao dịch trực tuyến</span>
+                        </a>
+
+                        <ul class="dropdown-menu" style="min-width:300px">
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/trading">
+                                Giao dịch chứng khoán
+                                <span class="desc">
+                                  Đặt lệnh giao dịch trực tuyến
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="balance.html">
+                                Quản lý tài khoản
+                                <span class="desc">
+                                  Quản lý hiệu quả đầu tư danh mục
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingHistory">
+                                Lịch sử đặt lệnh
+                                <span class="desc">
+                                  Lịch sử chi tiết các lệnh giao dịch
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/marginStats">
+                                Thống kê margin
+                                <span class="desc">
+                                  Thống kê sử dụng dịch vụ cho vay ký quỹ
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingAndTaxFee">
+                                Thống kê thuế & phí giao dịch
+                                <span class="desc">
+                                  Thống kê phí giao dịch, thuế bán và các dịch vụ khác
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                        </ul>
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+
+                      <!-- 2. NEWS -->
+                      <li class="dropdown-short">
+                        <a   href="balance.html"  aria-expanded="true">
+                          <i class="fa fa-newspaper-o"></i>&nbsp;
+                          <span class="hidden-sm">Quản lý tài khoản</span>
+                        </a>
+
+
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+                      <!-- 3. ANNOUCEMENT -->
+                      <li class="dropdown-short">
+                        <a   href="orderHistory.html" 
+                        aria-expanded="true">
+                        <i class="fa fa-binoculars"></i>&nbsp;
+                        <span class="hidden-sm">Lịch sử đặt lệnh</span>
+                      </a>
+
+                    </li>
+                    <!-- divider -->
+                    <li class="divider"></li>
+
+                    <!-- 3. ANALYSIS CENTER -->
+                    <li class="dropdown-short">
+                      <a  href="margin.html" 
+                      aria-expanded="true">
+                      <i class="fa fa-bar-chart"></i>&nbsp;
+                      <span class="hidden-sm">Thống kê margin</span>
+                    </a>
+
+                  </li>
+                  <!-- divider -->
+                  <li class="divider"></li>
+
+                  <!-- 4. ANNOUCEMENT -->
+                  <li class="dropdown-short">
+                    <a   href="tradingFee.html" 
+                    aria-expanded="true">
+                    <i class="fa fa-flag"></i>&nbsp;
+                    <span class="hidden-sm">Thống kê thuế & phí giao dịch</span>
+                  </a>
+
+                </li>
+                <!-- divider -->
+                <li class="divider"></li>
+
+              </ul>
+              <!--   <%-- RIGHT MENU --%> -->
+              <ul class="nav navbar-nav navbar-right" style="padding-bottom: 0px; padding-top: 0px;">
+                <!-- search form -->
+           <!--      <form method="POST" action="${pageContext.request.contextPath}/searchArticle" class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" style="padding-right:0px" role="search">
+             <div class="input-group">
+               <input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="articleTitle">
+               <span class="input-group-btn">
+                 <button class="btn btn-default" type="submit">
+                   <i class="fa fa-search"></i>&nbsp;
+                 </button>
+               </span>
+             </div>
+           </form> -->
+
+           <!-- 5. ACCOUNT -->
+           <li class="dropdown-grid">
+            <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+              <i class="fa fa-lock"></i>&nbsp;
+              <span id="userFullName" class="userFullName">User full name</span>
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-grid-wrapper" role="menu">
+              <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                <li>
+                  <div id="carousel-example-account" class="carousel slide">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <h3 class="text-right userFullName" style="padding-top:0px; border-bottom: 1px solid #555;"> User full name</h3>
+                            <br>
+                            <div class="row"> 
+                              <div class="col-xs-12">
+                                <img id="userProfilePicture" src="img/pistachio.jpg" class="img-responsible" style="max-height: 150px; float:right;" />
+                                <a style="float: left;" href="index.html" class="" onclick="location.href ='index.html';">Logout</a>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- MENU ENDS -->
+ 
+ <div class="col-xs-12 listArticle" style="min-height: 450px !important">
+   
+<div class="">
+
+ 
+              
+              <div class="table-responsive">
+
+
+                <table id="dataTable" class="table table-hover table-striped table-bordered" style="white-space: normal !important;">
+                  <thead>
+                    <tr> 
+                      <th width="10%"  style="">ID
+                      </th>
+
+
+                      <th width="90%"  style="">Thông tin
+                        </select>
+
+
+
+                      </th>
+                    </tr>
+                  </thead>
+                  
+           
+
+
+
+                  </table>
+                  <div class="col-xs-12" style="background: rgba(0,0,0,0.6);">  
+                  Tổng nợ margin: <span id="totalMarginDebt" class="formatNumber" style="color:red; text-align: right">0</span> <br/>
+                  Tổng lãi vay margin: <span id="totalMarginFee" class="formatNumber" style="color:red; text-align: right">0</span><br/>
+                  Tổng nợ và lãi: <span id="totalMarginDebtAndFee" class="formatNumber" style="color:red; text-align: right">0</span><br/>
+                  </div>
+
+  
+
+                  </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/accounting.min.js"></script>
+<script src="js/insanityMobile.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  var userId = localStorage.getItem("userId");
+  var userFullName = localStorage.getItem("userFullName");
+  var userProfilePicture = localStorage.getItem("userProfilePicture");
+  var totalMarginDebt = 0;
+  var totalMarginFee = 0;
+
+
+  function initInfo(){
+      $(".userFullName").text(userFullName);
+    // $("#balanceName").text(balanceName);
+    if((userProfilePicture).localeCompare("undefined") != 0){
+      $("#userProfilePicture").attr("src", userProfilePicture);
+    }
+  }
+
+  function loadMarginInfo(){
+  $.ajax({
+    // url : 'http://localhost:8080/BkSecurities/ajax/ajaxMarginStats/callback=?',  
+    url : 'http://www.nth7.com/ajax/ajaxMarginStats/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: true,
+        timeout: 20000,
+        data : {
+          userId : userId 
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          var dataSize = (Object.keys(data).length);  
+          if(dataSize > 0){
+            for (var value in data) {
+              var balanceDetail =[] ;
+              var obj = data[value];
+              console.log(obj);
+
+              if(obj.marginDebt > 0){
+                totalMarginDebt += obj.marginDebt;
+                totalMarginFee += obj.marginFee;
+                $('#dataTable').append('<tr><td>'+obj.portfolioId+'</td>'
+                  +'<td> Tài khoản:'+  obj.balanceId +'<br/> Mã CK: '+ obj.stockName+ ' <br/> Giá mua: ' +obj.buyPrice+  ' <br/> Khối lượng:  <span class="formatQuantity" >  '+ obj.quantity + ' </span> <br/> Tổng giá trị: <span class="formatNumber" > '+ obj.totalValue*1000 + ' </span><br/> Tỉ lệ Margin: '+ obj.marginRate*100+ '% <br/> Tổng nợ vay:<span class="formatNumber" style="color:red" > '+ obj.marginDebt.toFixed(0)+  '</span> <br/> Tổng lãi vay: <span class="formatNumber"  style="color:red">'+ (obj.marginFee).toFixed(0) +  '</span> <br/> Ngày mua: <span class="" style="text-align:right" > '+ obj.createdDate.replace(/'/g,'')+ '</span></td>'
+                    +'</tr>'); 
+                
+              }
+            }
+
+            $("#totalMarginDebt").text(totalMarginDebt);
+            $("#totalMarginFee").text(totalMarginFee);
+            $("#totalMarginDebtAndFee").text(totalMarginFee + totalMarginDebt);
+
+            $(".formatNumber").formatNumber();
+            $(".formatQuantity").formatQuantity();
+            
+          }
+          else{
+            bootbox.alert("Currently you don't have any portfolio stats");
+          }
+          $("#loadingScreen").hide();
+        },
+        error: function() {  
+          $("#errorMessage").show();
+          $("#loadingMessage").hide();
+        }
+      });
+
+
+  // $('#dataTable').DataTable({
+  //           "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+  //           "iDisplayLength": -1
+  //       });
+
+}
+
+
+$(document).ready(function(){
+
+  initInfo();
+loadMarginInfo();
+
+
+  
+});
+</script>
+</body>
+</html>

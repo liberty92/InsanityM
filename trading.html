@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liberty 2016 standard page</title>
+  <!-- Meta data -->
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link rel="stylesheet" type="text/css" href="css/MegaNavbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar-inverse.css" /> 
+  <style type="text/css">
+    body{
+      margin: 0px;
+      background: url(img/background3.jpg); 
+      color: #0099ff;
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+    }
+    .carousel-content {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      z-index: 20;
+      color: white;
+      font-size: 0.5em;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    table{
+      color: #0099ff;
+    } 
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+   <!-- HEADER STARTS -->
+   <div class="adminHeader row">
+    <a href="homepage.html">
+      <img alt="" style="height: 50px; width: 60px; position:absolute; top:5px; right:20px" class="img-responsive"  src="img/logo.png"> 
+    </a>
+  </div>
+  <!-- HEADER ENDS -->
+
+  <!-- MENU STARTS -->
+  <div class="row row" style=" ">
+    <nav class="navbar navbar-inverse no-border-radius" id="main_navbar" role="navigation" style="margin-bottom: 0px !important">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" tppabs="http://mastercafe.com.es/index.html"><i class="fa fa-home"></i> Giao dịch trực tuyến</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                 <!-- 
+                    regular link
+                    <a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a> -->
+
+                    <ul class="nav navbar-nav navbar-left">
+                      <!-- divider -->
+
+                      <li class="divider"></li>
+                      <!-- dropdown default -->
+
+
+
+
+
+
+                      <!-- 1. TRADING -->
+                      <li class="dropdown-short">
+                        <a  href="trading.html"  aria-expanded="true">
+                          <i class="fa fa-connectdevelop"></i>&nbsp;
+                          <span class="hidden-sm">Giao dịch trực tuyến</span>
+                        </a>
+
+                        <ul class="dropdown-menu" style="min-width:300px">
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/trading">
+                                Giao dịch chứng khoán
+                                <span class="desc">
+                                  Đặt lệnh giao dịch trực tuyến
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="balance.html">
+                                Quản lý tài khoản
+                                <span class="desc">
+                                  Quản lý hiệu quả đầu tư danh mục
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingHistory">
+                                Lịch sử đặt lệnh
+                                <span class="desc">
+                                  Lịch sử chi tiết các lệnh giao dịch
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/marginStats">
+                                Thống kê margin
+                                <span class="desc">
+                                  Thống kê sử dụng dịch vụ cho vay ký quỹ
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+
+                          <li>
+                            <p>
+                              <a href="${pageContext.request.contextPath}/user/tradingAndTaxFee">
+                                Thống kê thuế & phí giao dịch
+                                <span class="desc">
+                                  Thống kê phí giao dịch, thuế bán và các dịch vụ khác
+                                </span>
+                              </a>
+                            </p>
+                          </li>
+                          <li class="divider"></li>
+
+                        </ul>
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+
+                      <!-- 2. NEWS -->
+                      <li class="dropdown-short">
+                        <a   href="balance.html"  aria-expanded="true">
+                          <i class="fa fa-newspaper-o"></i>&nbsp;
+                          <span class="hidden-sm">Quản lý tài khoản</span>
+                        </a>
+
+
+                      </li>
+                      <!-- divider -->
+                      <li class="divider"></li>
+
+                      <!-- 3. ANNOUCEMENT -->
+                      <li class="dropdown-short">
+                        <a   href="orderHistory.html" 
+                        aria-expanded="true">
+                        <i class="fa fa-binoculars"></i>&nbsp;
+                        <span class="hidden-sm">Lịch sử đặt lệnh</span>
+                      </a>
+
+                    </li>
+                    <!-- divider -->
+                    <li class="divider"></li>
+
+                    <!-- 3. ANALYSIS CENTER -->
+                    <li class="dropdown-short">
+                      <a  href="margin.html" 
+                      aria-expanded="true">
+                      <i class="fa fa-bar-chart"></i>&nbsp;
+                      <span class="hidden-sm">Thống kê margin</span>
+                    </a>
+
+                  </li>
+                  <!-- divider -->
+                  <li class="divider"></li>
+
+                  <!-- 4. ANNOUCEMENT -->
+                  <li class="dropdown-short">
+                    <a   href="tradingFee.html" 
+                    aria-expanded="true">
+                    <i class="fa fa-flag"></i>&nbsp;
+                    <span class="hidden-sm">Thống kê thuế & phí giao dịch</span>
+                  </a>
+
+                </li>
+                <!-- divider -->
+                <li class="divider"></li>
+
+              </ul>
+              <!--   <%-- RIGHT MENU --%> -->
+              <ul class="nav navbar-nav navbar-right" style="padding-bottom: 0px; padding-top: 0px;">
+                <!-- search form -->
+           <!--      <form method="POST" action="${pageContext.request.contextPath}/searchArticle" class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" style="padding-right:0px" role="search">
+             <div class="input-group">
+               <input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="articleTitle">
+               <span class="input-group-btn">
+                 <button class="btn btn-default" type="submit">
+                   <i class="fa fa-search"></i>&nbsp;
+                 </button>
+               </span>
+             </div>
+           </form> -->
+
+           <!-- 5. ACCOUNT -->
+           <li class="dropdown-grid">
+            <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+              <i class="fa fa-lock"></i>&nbsp;
+              <span id="userFullName" class="userFullName">User full name</span>
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-grid-wrapper" role="menu">
+              <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                <li>
+                  <div id="carousel-example-account" class="carousel slide">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <h3 class="text-right userFullName" style="padding-top:0px; border-bottom: 1px solid #555;"> User full name</h3>
+                            <br>
+                            <div class="row"> 
+                              <div class="col-xs-12">
+                                <img id="userProfilePicture" src="img/pistachio.jpg" class="img-responsible" style="max-height: 150px; float:right;" />
+                                <a style="float: left;" href="index.html" class="" onclick="location.href ='index.html';">Logout</a>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- MENU ENDS -->
+
+<div class="col-xs-12 listArticle" style="min-height: 450px !important">
+
+  <div class="">
+
+
+
+    <div class="table-responsive">
+
+
+      <table id="dataTable" class="table table-hover table-striped table-bordered">
+        <thead>
+          <tr> 
+            <th width="30%"  style=""> <a href="balance.html"><i class="fa fa-university"  style="color:green"> Tài khoản</i> </a></th>
+                     
+
+
+            <th width="70%"  style="">
+              <select name="" id="balanceSelect" class="form-control dropdownSelect" required="required" style="margin-bottom: 5px"> 
+                <option value="0">Chọn tài khoản</option> 
+              </select>
+
+
+
+            </th>
+          </tr>
+        </thead>
+
+
+          <tr>
+            <td>Mã CK</td>
+            <td>
+             <select name="" id="stockSelect" class="form-control dropdownSelect" required="required" style="margin-bottom: 5px">
+                    <option value="0">CK</option> 
+                  </select>
+
+                  </td>
+          </tr>
+
+
+
+
+
+
+        <tr>
+          <td>Giá</td>
+          <td style="white-space: nowrap; text-align: right;"> 
+            <span id="price" class="col-xs-2" style="color: orange; padding: 3px">0</span>
+            <span id="ceil" class="col-xs-2" style="color: violet; padding: 3px">0</span>
+            <span id="floor" class="col-xs-2" style="color: aqua; padding: 3px">0</span>
+            <span id="max" class="col-xs-6" style="color: #0099ff; padding: 3px">0</span>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>Tiền mặt</td>
+            <td style="text-align: right;"  class="formatNumber" id="balanceCash">0</td>
+          </tr>
+          <tr>
+            <td>Khả dụng</td>
+            <td style="text-align: right;"  class="formatNumber" id="balanceAvailableCash">0</td>
+          </tr>
+
+
+          <tr>
+            <td>CK đang có</td>
+            <td style="text-align: right;"  class="havingQuantity" id="havingQuantity">0</td>
+          </tr>
+          <tr>
+            <td>Khả dụng</td>
+            <td style="text-align: right;"  class="havingQuantity" id="havingQuantityAvailable">0</td>
+          </tr>
+
+          <tr>
+            <td>Hành động</td>
+            <td> 
+              <select name="" id="action" class="form-control" required="required" style="margin-bottom: 5px">
+                <option value="BUY" selected="selected">MUA</option>
+                <option value="SELL" >BÁN</option>
+              </select>
+            </td>
+          </tr> 
+
+          <tr>
+            <td>Loại lệnh</td>
+            <td> 
+              <select name="" id="orderType" class="form-control" required="required" style="margin-bottom: 5px">
+                <option value="LO" selected="selected">LO</option>
+                <option value="MP" >MP</option>
+                <option value="ATO" >ATO</option>
+                <option value="ATC" >ATC</option>
+              </select>
+            </td>
+          </tr> 
+
+          <tr>
+            <td>Margin</td>
+            <td> 
+            <div class="col-xs-4" style="padding-top: 8px">
+              <span style="text-align: right;" class="formatPercent" id="marginRate">0</span>
+            </div>
+            <div class="col-xs-8" style="padding-right: 0px">
+              
+              <select name="" style="padding-right: 0px" id="marginState" class="col-xs-12 form-control" required="required" >
+                <option value="NO" >Không</option>
+                <option value="YES" selected="selected" >Có</option>
+              </select>
+            </div>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>Khối lượng</td>
+            <td> 
+              <input type="number" style="text-align: right" name="" id="quantityInput" class="form-control formatQuantity" value="" min="{5"} max="" step="" required="required" title="">
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>Giá</td>
+            <td> 
+              <input type="number" style="text-align: right"  name="" id="priceInput" class="form-control formatQuantity" value="" min="{5"} max="" step="" required="required" title="">
+            </td>
+          </tr>
+
+
+
+
+          <tr>
+            <td>Tổng giá trị</td>
+            <td id="totalValue" style="text-align: right;" class="formatNumber"> 
+              0
+            </td>
+          </tr>
+
+          <tr>
+            <td>Xác nhận</td>
+            <td> 
+              <button type="button" id="confirmOrder" class="btn btn-primary btn-block">Gửi lệnh</button>
+            </td>
+          </tr>
+
+
+        </table>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+</div>
+
+
+<div id="loadingScreen" style="position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; text-align: center;  padding-top: 200px">
+
+ <span id="loadingMessage" style="vertical-align: middle; text-align: center; padding-top: 200px;">
+
+   <i style='color: blue' class='fa fa-refresh fa-spin fa-2x fa-fw'></i><br/> <h4 style='color:  #00BFFF;'>loading</h4>
+ </span>
+
+ <span id="errorMessage" style="vertical-align: middle; text-align: center; padding-top: 200px; ">
+
+   <i style='color: orange' class='fa fa-exclamation-triangle fa-2x '></i><br/> <h4 style='color:  red'>connection error</h4>
+ </span>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/accounting.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/insanityMobile.js"></script>
+
+<script type="text/javascript"> 
+  var userId = localStorage.getItem("userId");
+  var userFullName = localStorage.getItem("userFullName");
+  var userProfilePicture = localStorage.getItem("userProfilePicture");
+  var balanceList =[] ;
+  var stockList =[] ;
+
+  var ceil = 0;
+  var floor = 0;
+  var price = 0;
+  var availableCash = 0;
+  var cash =0;
+  var max = 0;
+  var totalValue = 0;
+
+  var selectedBalanceId = 0;
+  var selectedStockId =0;
+  var marginRate = 0;
+  var marginRateUsing = 1;
+
+  var quantityInput = 0;
+  var priceInput = 0;
+
+  var havingQuantity = 0;
+  var havingQuantityAvailable = 0;
+
+  function initInfo(){
+      $(".userFullName").text(userFullName);
+    // $("#balanceName").text(balanceName);
+    if((userProfilePicture).localeCompare("undefined") != 0){
+      $("#userProfilePicture").attr("src", userProfilePicture);
+    }
+  }
+
+
+
+
+
+function loadBalanceInfo(){
+  $.ajax({
+    // url : 'http://localhost:8080/BkSecurities/ajax/ajaxBalanceInfo/callback=?',  
+        url : 'http://www.nth7.com/ajax/ajaxBalanceInfo/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: true,
+        timeout: 20000,
+        data : {
+          userId : userId 
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          var dataSize = (Object.keys(data).length);  
+          if(dataSize > 0){
+            for (var value in data) {
+              var balanceDetail =[] ;
+              var obj = data[value];
+              console.log(obj);
+              balanceList.push(obj);
+              $('#balanceSelect')
+              .append($("<option></option>")
+                .attr("value",obj.balanceId)
+                .text(obj.balanceName)); 
+            }
+            console.log(balanceList);
+            $(".dropdownSelect").select2();
+          }
+          else{
+            bootbox.alert("Currently you don't have any trading balance");
+          }
+          $("#loadingScreen").hide();
+        },
+        error: function() {  
+          $("#errorMessage").show();
+          $("#loadingMessage").hide();
+        }
+      });
+}
+
+function loadStockInfo(){
+  if(stockList.length == 0){
+    // console.log(stockList);
+
+    $.ajax({
+      // url : 'http://localhost:8080/BkSecurities/ajax/ajaxStockInfo/callback=?',  
+      url : 'http://www.nth7.com/ajax/ajaxStockInfo/callback=?',  
+
+      dataType: 'jsonp',
+      jsonp: "callback", 
+      async: true,
+      timeout: 120000,
+      data : {
+          // balanceId : balanceId 
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          var dataSize = (Object.keys(data).length);  
+          if(dataSize > 0){
+            for (var value in data) {
+              var portfolioDetail =[] ;
+              var obj = data[value];
+              // console.log(obj);
+              stockList.push(obj);
+              $('#stockSelect')
+              .append($("<option></option>")
+                .attr("value",obj.stockId)
+                .text(obj.stockName)); 
+            }
+          // console.log(stockList);
+          localStorage.setItem("stockList",stockList);
+          console.log(localStorage.getItem("stockList"));
+          $(".dropdownSelect").select2();
+        }
+        else{
+          bootbox.alert("Currently no stock in system");
+        }
+        $("#loadingScreen").hide();
+      },
+      error: function() {  
+        $("#errorMessage").show();
+        $("#loadingMessage").hide();
+      }
+    });
+  }
+}
+
+
+function sendOrder(){
+  var balanceId = selectedBalanceId;
+  var stockId = selectedStockId;
+  var action = $("#action").val();
+  var orderType = $("#orderType").val();
+  var marginState = $("#marginState").val();
+  var priceInput = $("#priceInput").val();
+  var quantityInput = $("#quantityInput").val();
+
+
+  var validation = 1;
+  stockId = parseInt(stockId);
+  balanceId = parseInt(balanceId);
+  quantityInput = parseInt(quantityInput);
+  priceInput = parseFloat(priceInput);
+
+  if( balanceId<=0){
+    validation = 0;
+    bootbox.alert("Bạn chưa chọn tài khoản!", function() {
+    });
+  }
+
+  if(stockId<=0){
+    validation = 0;
+    bootbox.alert("Bạn chưa chọn mã chứng khoán!", function() {
+    });
+  }
+
+
+
+  if(quantityInput<=0){
+    validation = 0;
+    bootbox.alert("Bạn chưa chọn khối lượng!", function() {
+    });
+  }
+
+
+
+  if(priceInput<=0){
+    validation = 0;
+    bootbox.alert("Bạn chưa chọn giá!", function() {
+    });
+  }
+
+
+  if(validation >0){
+
+
+    $.ajax({
+      // url : 'http://localhost:8080/BkSecurities/ajax/ajaxAddOrder/callback=?',  
+        url : 'http://www.nth7.com/ajax/ajaxAddOrder/callback=?',  
+        dataType: 'jsonp',
+        jsonp: "callback", 
+        async: true,
+        timeout: 20000,
+        data : {
+          balanceId : balanceId,
+          stockId : stockId,
+          action : action,
+          orderType : orderType,
+          marginState : marginState,
+          price : priceInput,
+          quantity : quantityInput
+        },
+        beforeSend : function(){
+          $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          console.log(data.message);
+          bootbox.alert(data.message, function() {
+          });
+          $("#loadingScreen").hide();
+        },
+        error: function() {  
+          $("#errorMessage").show();
+          $("#loadingMessage").hide();
+        }
+      });
+  }
+}
+
+function stockUpdate(){
+
+  $.ajax({
+    // url : 'http://localhost:8080/BkSecurities/ajax/ajaxStockInfoDetail/callback=?',  
+      url : 'http://www.nth7.com/ajax/ajaxStockInfoDetail/callback=?',  
+
+      dataType: 'jsonp',
+      jsonp: "callback", 
+      async: true,
+      timeout: 120000,
+      data : {
+        stockId : stockId,
+        balanceId: balanceId 
+      },
+      beforeSend : function(){
+          // $("#errorMessage").hide();
+        } ,
+        success : function(data) {
+          var dataSize = (Object.keys(data).length);  
+          if(dataSize > 0){
+            for (var value in data) {
+              var portfolioDetail =[] ;
+              var obj = data[value];
+              // console.log(obj);
+
+              price = (obj.price);
+              ceil = (obj.ceil);
+              floor = (obj.floor);
+              havingQuantity = (obj.quantity);
+              havingQuantityAvailable = (obj.availableQuantity);
+              $("#price").text(price);
+              $("#ceil").text(ceil);
+              $("#floor").text(floor);
+              $("#marginRate").text(marginRate);
+              max = (availableCash/floor/1000/marginRate).toFixed(0);
+              $("#max").text(max);
+              $("#havingQuantity").text(havingQuantity);
+              $("#havingQuantityAvailable").text(havingQuantityAvailable);
+              $('#max').formatQuantity();
+              $('#marginRate').formatPercent2();
+              $('#havingQuantity').formatQuantity();
+              $('#havingQuantityAvailable').formatQuantity();
+              $('#max').text("Max: "+($('#max').text() ));
+
+
+            }
+          // console.log(stockList);
+          // localStorage.setItem("stockList",stockList);
+          // console.log(localStorage.getItem("stockList"));
+          // $(".dropdownSelect").select2();
+        }
+        else{
+          // bootbox.alert("Currently no stock in system");
+        }
+        $("#loadingScreen").hide();
+      },
+      error: function() {  
+        // $("#errorMessage").show();
+        // $("#loadingMessage").hide();
+      }
+    });
+}
+
+$('#balanceSelect').on('change', function() {
+  selectedBalanceId = $(this).val();
+  balanceId = selectedBalanceId;
+  for (var i = 0; i < balanceList.length; i++) {
+    if(selectedBalanceId == balanceList[i].balanceId){
+      availableCash = balanceList[i].balanceAvailableCash;
+
+       $("#balanceCash").text(balanceList[i].balanceCash);
+        $("#balanceAvailableCash").text(availableCash);
+
+        // $(".formatPercent").formatPercent2();
+        $(".formatTime").formatTime();
+        $(".formatNumber").formatNumber();
+
+      if($("#action").text().localeCompare("BUY")){ 
+        max = (availableCash/floor/1000/marginRateUsing).toFixed(0);
+        $("#max").text(max);
+        $('#max').formatQuantity();
+        $('#max').text("Max: "+($('#max').text() ));
+        if(max == Infinity){
+          $("#max").text(0);
+        } 
+
+      } 
+
+    }
+  }
+ 
+});
+
+ 
+
+$("#confirmOrder").on('click', function() {
+  sendOrder();
+});
+
+$("#price").on('keyup', function() {
+  console.log("|"+"|");
+
+  price = $("#price").val();
+  quantity = $("#quantity").val();
+  quantity = parseInt(quantity);
+  console.log("|"+quantity+"|");
+  price = parseFloat(price);
+  console.log("|"+price+"|");
+  totalValue = price*quantity*1000;
+  $("#totalValue").text(totalValue);
+  $(".formatNumber").formatNumber();
+
+});
+
+$("#priceInput").on('keyup', function() {
+  priceInput = $("#priceInput").val();
+  quantityInput = $("#quantityInput").val();
+  quantityInput = parseInt(quantityInput);
+  priceInput = parseFloat(priceInput);
+  totalValue = priceInput*quantityInput*1000;
+  $("#totalValue").text(totalValue);
+  $(".formatNumber").formatNumber();
+
+});
+
+$("#quantityInput").on('keyup', function() {
+  priceInput = $("#priceInput").val();
+  quantityInput = $("#quantityInput").val();
+  quantityInput = parseInt(quantityInput);
+  priceInput = parseFloat(priceInput);
+  totalValue = priceInput*quantityInput*1000;
+  $("#totalValue").text(totalValue);
+});
+
+
+$('#stockSelect').on('change', function() {
+  selectedStockId = $('#stockSelect').val();
+  stockId = selectedStockId;
+  balanceId = $("#balanceSelect").val();
+
+  for (var i = 0; i < stockList.length; i++) {
+    if(stockId == stockList[i].stockId){
+      marginRate = stockList[i].marginRate;
+      if($("marginState").text().localeCompare("YES") == 0){
+        marginRateUsing = marginRate;
+      }
+      else{
+        marginRateUsing =1;
+      }
+
+    }
+  }
+
+  stockUpdate();
+
+
+});
+ 
+
+$('#marginState').on('change', function (e) {
+  if($(this).val().localeCompare("YES") ==0){
+    marginRateUsing = marginRate;
+  }
+  else{
+    marginRateUsing = 1;
+  }
+
+  if( $("#action").val().localeCompare("BUY") == 0){  
+    max = (availableCash/floor/1000/marginRateUsing).toFixed(0);
+    $('#max').text(max);
+    $('#max').formatQuantity();
+    $('#max').text("Max: "+($('#max').text() ));
+
+  }
+  else{
+   $('#max').text('selling');
+   console.log("|"+ $("#action").val()+"|");
+ }
+});
+
+
+
+
+$(document).ready(function(){
+  initInfo();
+  loadBalanceInfo();
+  loadStockInfo();
+});
+</script>
+</body>
+</html>
